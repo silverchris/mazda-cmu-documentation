@@ -4,44 +4,80 @@
 ## Main Processor
 [NXP/Freescale i.mx6](pdf/IMX6DQRM.pdf)
 
+Usually an I.MX6D dual core processor.
+Some reports of I.MX6Q quad core processors have been found, but not verified.
+
+```
+/ # cat /proc/cpuinfo
+Processor       : ARMv7 Processor rev 10 (v7l)
+processor       : 0
+BogoMIPS        : 1694.44
+
+processor       : 1
+BogoMIPS        : 1700.04
+
+Features        : swp half thumb fastmult vfp edsp neon vfpv3
+CPU implementer : 0x41
+CPU architecture: 7
+CPU variant     : 0x2
+CPU part        : 0xc09
+CPU revision    : 10
+
+Hardware        : JCI i.MX 6Quad Core CMU Board
+Revision        : 63000
+Serial          : 0000000000000000
+
+```
+
 
 ## Storage
 
 ### SPI-NOR
+- Contains the bootloader for both failsafe and normal operation.
+- Contains the full failsafe image.
+- Contains some configuration data
+  
 Macronix MX25L6445 - 16SOP package. 64MBIT/8Megabyte
 Contains:
 
-| Mount Point | Partition Name                | Device | Flash Offset | Filesystem |
-| ----------- | ----------------------------- | ------ | ------------ | ---------- |
-|             | bootstrap                     |        | 0x000000     |
-|             | boot-select                   |        | 0x010000     |
-|             | ibc1                          |        | 0x020000     |
-|             | [ibc2](failsafe-boot.md)      |        | 0x040000     |
-|             | nv-config                     |        | 0x060000     |
-| /config     | config                        |        | 0x070000     | SquashFS   |
-|             | jci-boot-diag                 |        | 0x0D0000     |
-|             | [fail-safe](failsafe-boot.md) |        | 0x0E0000     |
-|             | update                        |        | 0x7E0000     |
+| Mount Point | Partition Name                | Device    | Flash Offset | Filesystem |
+| ----------- | ----------------------------- | --------- | ------------ | ---------- |
+|             | bootstrap                     | /dev/mtd0 | 0x000000     | N/A        |
+|             | boot-select                   | /dev/mtd1 | 0x010000     | N/A        |
+|             | ibc1                          | /dev/mtd2 | 0x020000     | N/A        |
+|             | [ibc2](failsafe-boot.md)      | /dev/mtd3 | 0x040000     | N/A        |
+|             | nv-config                     | /dev/mtd4 | 0x060000     | N/A        |
+| /config     | config                        | /dev/mtd5 | 0x070000     | SquashFS   |
+|             | jci-boot-diag                 | /dev/mtd6 | 0x0D0000     |            |
+|             | [fail-safe](failsafe-boot.md) | /dev/mtd7 | 0x0E0000     | N/A        |
+|             | update                        | /dev/mtd8 | 0x7E0000     | N/A        |
 
 
 ### eMMC
 
+4GB
+
 | Mount Point       | Use | Device         | Filesystem |
 | ----------------- | --- | -------------- | ---------- |
-| /mnt/data_persist |     | /dev/mmcblk0p2 |            |
-| /mnt/resources    |     | /dev/mmcblk0p1 |            |
+| /mnt/data_persist |     | /dev/mmcblk0p2 | relfs      |
+| /mnt/resources    |     | /dev/mmcblk0p1 | relfs      |
 
 
 
 ### NAND
 
+1GB
+
 Main kernel and rootfs live here.
+Uses proprietary FlashFx(ffxblk) driver from [DataLight](https://en.wikipedia.org/wiki/Datalight)
 
 | Mount Point | Use    | Device       | Filesystem |
 | ----------- | ------ | ------------ | ---------- |
 |             | kernel | /dev/ffx00   |            |
 | /           | rootfs | /dev/ffx01p1 | relfs      |
-
+|             |        | /dev/ffx01p2 | relfs      |
+|             |        | /dev/ffx01p3 | relfs      |
+| /mnt/data   |        | /dev/ffx01p4 | relfs      |
 
 ## VIP
 
@@ -52,3 +88,53 @@ Implements the communication between the main processor and the CAN/LIN busses.
 Also performs watchdog function, and will reset the main processor if communication is disrupted. (handled by vim_app)
 
 
+## I2C devices
+| Bus-Address | Name                                                                                       |
+| ----------- | ------------------------------------------------------------------------------------------ |
+| 0-0018      | [aic310x](https://www.ti.com/product/TLV320AIC3100)                                        |
+| 1-0020      | [adv7180](https://www.analog.com/media/en/technical-documentation/data-sheets/adv7180.pdf) |
+| 2-0010      | auth-ic                                                                                    |
+
+## Connectors
+
+### Power/Communication
+Sumitomo 6098-5611 (Unverified)
+![CMU Connector](doc/assets/images/MZ3USAC0920_201B.svg)
+
+### USB
+![USB Connector](doc/assets/images/MZ3USAC0920_201D.svg)
+
+
+Hirose GT17 series connector. One with B keying, one with C keying
+| P/N              | Description    |
+| ---------------- | -------------- |
+| GT8-2428SCF(70)  | Crimp pin      |
+| GT17HN-4DS-2C(C) | C keyed insert |
+| GT17HN-4DS-2C(B) | B keyed insert |
+| GT17HNS-4DS-HU   | Housing        |
+| GT17HNS-4DS-5CF  | Shield Contact |
+
+### Display
+
+![Display Connector](doc/assets/images/MZ3USAC0920_201C.svg)
+
+Hirose GT17 series connector. A keying
+| P/N              | Description    |
+| ---------------- | -------------- |
+| GT8-2428SCF(70)  | Crimp pin      |
+| GT17HN-4DS-2C(A) | A keyed insert |
+| GT17HNS-4DS-HU   | Housing        |
+| GT17HNS-4DS-5CF  | Shield Contact |
+
+
+### Audio Connector
+
+![Audio Connector](doc/assets/images/MZ3USAC0920_201A.svg)
+
+| P/N          | Description  |
+| ------------ | ------------ |
+| A104954CT-ND | Crimp socket |
+| 1717115-1    | Housing      |
+
+### GPS Connector
+Unknown
