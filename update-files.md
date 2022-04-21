@@ -25,7 +25,7 @@ The zip contains the following
 | usersettingsbackup/                           | Yes      | Unknown                                                                |
 | usersettingscleanup/                          | Yes      | Unknown                                                                |
 | usersettingsrestore/                          | Yes      | Unknown                                                                |
-| vip/                                          | Yes      | Update for the microcontroller that is used for CAN/LIN communications |
+| [vip/](hardware.md#vip)                       | Yes      | Update for the microcontroller that is used for CAN/LIN communications |
 | checksumoption/                               | Yes      | Unknown                                                                |
 | [fail-safe/](failsafe-boot.md)                | Yes      | Failsafe image for SPI-NOR:0x0E0000                                    |
 | [ibc2/](failsafe-boot.md)                     | Yes      | Update for IBC2 SPI-NOR:0x040000                                       |

@@ -10,6 +10,7 @@
 ### SPI-NOR
 Macronix MX25L6445 - 16SOP package. 64MBIT/8Megabyte
 Contains:
+
 | Mount Point | Partition Name                | Device | Flash Offset | Filesystem |
 | ----------- | ----------------------------- | ------ | ------------ | ---------- |
 |             | bootstrap                     |        | 0x000000     |
@@ -24,6 +25,7 @@ Contains:
 
 
 ### eMMC
+
 | Mount Point       | Use | Device         | Filesystem |
 | ----------------- | --- | -------------- | ---------- |
 | /mnt/data_persist |     | /dev/mmcblk0p2 |            |
@@ -32,6 +34,7 @@ Contains:
 
 
 ### NAND
+
 Main kernel and rootfs live here.
 | Mount Point | Use    | Device       | Filesystem |
 | ----------- | ------ | ------------ | ---------- |
@@ -40,6 +43,7 @@ Main kernel and rootfs live here.
 
 
 ## VIP
+
 [Renaesas R5F35MCEJFB](pdf/R5F35MCEJFB.pdf)
 
 Implements the communication between the main processor and the CAN/LIN busses.
