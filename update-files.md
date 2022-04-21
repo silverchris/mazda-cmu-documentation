@@ -9,7 +9,7 @@ The zip contains the following
 | --------- | -------- | ----------- |
 | jci_subord_cert.pem | No | Subordinate Certificate |
 | publisher_cert.pem | No | Publisher Certificate |
-| main_instructions.ini | No | Update instructions |
+| [main_instructions.ini](#maininstructionsini) | No | Update instructions |
 | versions.ini.gz | Unknown | Versions of update, versions the update is compatible with |
 | bootstrap/ | Yes | Update for bootstrap section of SPI-NOR |
 | cleandatapersist/ | Yes | Script to cleanup /mnt/data_persist/ |
@@ -46,4 +46,31 @@ The zip contains the following
 1. Root certificate integrity is validated.
 2. Subordinate certificate is checked against Root certificate
 3. Publisher certificate is checked against Subordinate certificate
+4. Signature is validated against Publisher certificate
+
+
+## main_instructions.ini
+
+### [Settings]
+#### Fields:
+- PackageID
+- CompressionType
+- TotalStepsCount
+
+### [Instructions]
+#### Fields
+| Keys | Details |
+| ---- | ------- |
+| Count | Contains the number of instructions|
+| 1 <br/> ... <br/> Count | Contains the instruction details which are comma delimited in the format <br/>                          Operation, Directory, step INI file, Count of instructions in step INI file <br>Available operations are Execute, ImageUpdate, FileUpdate |
+|
+
+
+
+### [DataStorage]
+#### Fields
+- Count
+- UPType
+- ReTransmit
+
 
