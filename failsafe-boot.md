@@ -1,4 +1,4 @@
-## Failsafe Boot/IBC2
+# Failsafe Boot/IBC2
 
 Failsafe boot is launched when the first byte of the boot-select flash location(SPI-NOR:0x010000) is set to 0x00. The bootstrap code loads IBC2 from SPI-NOR:0x040000 into memory at OCRAM:0x00912000, then jumps to location 0x009126E0, starting IBC2.
 
@@ -57,7 +57,7 @@ Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ## Booting the kernel
 After the kernel image is loaded into memory, IBC2 then looks for the start of the kernel image header. Using the data contained in the header to locate the start of the kernel, the kernel command line, and initramfs image start and end.
 
-It uses these valeus to create a device tree, and then boots the kernel.
+It uses these values to create a device tree, and then boots the kernel.
 
 
 
