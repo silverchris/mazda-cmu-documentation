@@ -36,6 +36,7 @@ Contains:
 ### NAND
 
 Main kernel and rootfs live here.
+
 | Mount Point | Use    | Device       | Filesystem |
 | ----------- | ------ | ------------ | ---------- |
 |             | kernel | /dev/ffx00   |            |

@@ -13,3 +13,5 @@ Not all information may be correct. It is provided with no warranty or guarantee
 [Updates](update-files.md)
 
 [Failsafe Boot](failsafe-boot.md)
+
+[DBus Interfaces](dbus/index.md)
