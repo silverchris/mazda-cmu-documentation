@@ -29,10 +29,14 @@ Serial          : 0000000000000000
 
 ```
 
+## Memory
+1GB DDR(3?)
 
 ## Storage
 
 ### SPI-NOR
+Device: spi0.0
+
 - Contains the bootloader for both failsafe and normal operation.
 - Contains the full failsafe image.
 - Contains some configuration data
@@ -54,6 +58,7 @@ Contains:
 
 
 ### eMMC
+Device: mmcblk0
 
 4GB
 
@@ -65,6 +70,8 @@ Contains:
 
 
 ### NAND
+
+Device: ffx00, ffx01
 
 1GB
 
@@ -90,11 +97,11 @@ Also performs watchdog function, and will reset the main processor if communicat
 
 ## I2C devices
 
-| Bus-Address | Name                                                                                       |
-| ----------- | ------------------------------------------------------------------------------------------ |
-| 0-0018      | [aic310x](https://www.ti.com/product/TLV320AIC3100)                                        |
-| 1-0020      | [adv7180](https://www.analog.com/media/en/technical-documentation/data-sheets/adv7180.pdf) |
-| 2-0010      | auth-ic                                                                                    |
+| Bus-Address | Name                                                |
+| ----------- | --------------------------------------------------- |
+| 0-0018      | [aic310x](https://www.ti.com/product/TLV320AIC3100) |
+| 1-0020      | [adv7180](#video-decoder)                           |
+| 2-0010      | auth-ic                                             |
 
 ## Connectors
 
@@ -172,36 +179,36 @@ Hirose GT17 series connector. A keying
 
 ![Audio Connector](doc/assets/images/MZ3USAC0920_201A.svg)
 
-| Pin | Use                       |
-| --- | ------------------------- |
-| 1A  | Rear Camera (Shield Wire) |
-| 1B  | Rear Camera               |
-| 1C  | Rear Camera               |
-| 1D  | Rear Camera (Shield)      |
-| 1E  |                           |
-| 1F  |                           |
-| 1G  |                           |
-| 1H  |                           |
-| 1I  |                           |
-| 1J  |                           |
-| 1K  |                           |
-| 1L  |                           |
-| 1M  | Steering Wheel Control    |
-| 1N  | Steering Wheel Control    |
-| 1O  | Steering Wheel Control    |
-| 1P  | Microphone                |
-| 1Q  | Microphone                |
-| 1R  | Microphone                |
-| 1S  | Microphone                |
-| 1T  | Microphone                |
-| 1U  |                           |
-| 1V  | Microphone (Shield)       |
-| 1W  |                           |
-| 1X  | Audio Out (Shield)        |
-| 1Y  | Audio Out                 |
-| 1Z  | Audio Out                 |
-| 1AA | Audio Out                 |
-| 1AB | Audio Out                 |
+| Pin | Use                           |
+| --- | ----------------------------- |
+| 1A  | Rear Camera (Shield Wire)     |
+| 1B  | Rear Camera                   |
+| 1C  | Rear Camera                   |
+| 1D  | Rear Camera (Shield)          |
+| 1E  |                               |
+| 1F  |                               |
+| 1G  | iPod Video (Not implemented?) |
+| 1H  | iPod Video (Not implemented?) |
+| 1I  |                               |
+| 1J  |                               |
+| 1K  |                               |
+| 1L  |                               |
+| 1M  | Steering Wheel Control        |
+| 1N  | Steering Wheel Control        |
+| 1O  | Steering Wheel Control        |
+| 1P  | Microphone                    |
+| 1Q  | Microphone                    |
+| 1R  | Microphone                    |
+| 1S  | Microphone                    |
+| 1T  | Microphone                    |
+| 1U  |                               |
+| 1V  | Microphone (Shield)           |
+| 1W  |                               |
+| 1X  | Audio Out (Shield)            |
+| 1Y  | Audio Out                     |
+| 1Z  | Audio Out                     |
+| 1AA | Audio Out                     |
+| 1AB | Audio Out                     |
 
 
 | P/N          | Description  |
@@ -211,3 +218,9 @@ Hirose GT17 series connector. A keying
 
 ### GPS Connector
 Unknown
+
+## Wireless
+wl1285q-bt possibly made by Texas Instruments, uses wl12xx driver
+
+## Video Decoder
+Analog Devices [adv7180](https://www.analog.com/media/en/technical-documentation/data-sheets/adv7180.pdf)
