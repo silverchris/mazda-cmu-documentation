@@ -11,8 +11,8 @@
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
 <svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="118.804px"
-	 height="78.729px" viewBox="0 0 118.804 78.729" enable-background="new 0 0 118.804 78.729" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="237.608px"
+	 height="157.458px" viewBox="0 0 118.804 78.729" enable-background="new 0 0 118.804 78.729" xml:space="preserve" style="background-color:white">
 <switch>
 	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
 		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -70,8 +70,6 @@
 				<line fill="none" stroke="#000000" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" x1="78.542" y1="74.08" x2="78.542" y2="77.029"/>
 		</g>
 		<g id="TEXT">
-			<text transform="matrix(1 0 0 1 1.3999 17.7637)" font-family="'Arial'" font-size="8">CONNECTIVITY MASTER UNIT</text>
-			<text transform="matrix(1 0 0 1 1.3999 8.2637)" font-family="'Arial'" font-size="8">0920-201C</text>
 			<text transform="matrix(1 0 0 1 90.0117 70.4565)" font-family="'Arial'" font-size="6">3B</text>
 			<text transform="matrix(1 0 0 1 90.0117 39.957)" font-family="'Arial'" font-size="6">3A</text>
 			<text transform="matrix(1 0 0 1 73.3735 70.4565)" font-family="'Arial'" font-size="6">3D</text>

@@ -11,8 +11,8 @@
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
 <svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="243.386px"
-	 height="110.533px" viewBox="0 0 243.386 110.533" enable-background="new 0 0 243.386 110.533" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="486.772px"
+	 height="221.066px" viewBox="0 0 243.386 110.533" enable-background="new 0 0 243.386 110.533" xml:space="preserve" style="background-color:white">
 <switch>
 	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
 		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -200,8 +200,6 @@
 			<text transform="matrix(1 0 0 1 231.8037 77.8228)" font-family="'Arial'" font-size="5">R</text>
 			<text transform="matrix(1 0 0 1 180.7168 107.1841)" font-family="'Arial'" font-size="6">BARE WIRE :</text>
 			<text transform="matrix(1 0 0 1 70.4673 107.1841)" font-family="'Arial'" font-size="6">: BARE WIRE</text>
-			<text transform="matrix(1 0 0 1 1.3999 17.7637)" font-family="'Arial'" font-size="8">CONNECTIVITY MASTER UNIT</text>
-			<text transform="matrix(1 0 0 1 1.3999 8.2637)" font-family="'Arial'" font-size="8">0920-201A</text>
 			<text transform="matrix(1 0 0 1 36.7495 89.0991)" font-family="'Arial'" font-size="6">1Z</text>
 			<text transform="matrix(1 0 0 1 36.5811 49.0229)" font-family="'Arial'" font-size="6">1Y</text>
 			<text transform="matrix(1 0 0 1 51.7656 49.0229)" font-family="'Arial'" font-size="6">1W</text>

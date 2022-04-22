@@ -11,8 +11,8 @@
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
 <svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="227.906px"
-	 height="138.917px" viewBox="0 0 227.906 138.917" enable-background="new 0 0 227.906 138.917" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="455.812px"
+	 height="277.834px" viewBox="0 0 227.906 138.917" enable-background="new 0 0 227.906 138.917" xml:space="preserve" style="background-color:white">
 <switch>
 	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
 		<i:pgfRef  xlink:href="#adobe_illustrator_pgf">
@@ -320,8 +320,6 @@
 			<text transform="matrix(1 0 0 1 166.126 101.0522)" font-family="'Arial'" font-size="5">R</text>
 			<text transform="matrix(1 0 0 1 190.2939 89.106)" fill="#FFFFFF" font-family="'Arial'" font-size="5">B</text>
 			<text transform="matrix(1 0 0 1 190.2939 101.0513)" fill="#FFFFFF" font-family="'Arial'" font-size="5">B</text>
-			<text transform="matrix(1 0 0 1 1.3999 17.7637)" font-family="'Arial'" font-size="8">CONNECTIVITY MASTER UNIT</text>
-			<text transform="matrix(1 0 0 1 1.3999 8.2637)" font-family="'Arial'" font-size="8">0920-201B</text>
 			<text transform="matrix(1 0 0 1 164.6436 48.6753)" font-family="'Arial'" font-size="6">2E</text>
 			<text transform="matrix(1 0 0 1 147.542 48.6753)" font-family="'Arial'" font-size="6">2G</text>
 			<text transform="matrix(1 0 0 1 132.9336 48.6753)" font-family="'Arial'" font-size="6">2I</text>

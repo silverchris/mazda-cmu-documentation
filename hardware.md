@@ -89,6 +89,7 @@ Also performs watchdog function, and will reset the main processor if communicat
 
 
 ## I2C devices
+
 | Bus-Address | Name                                                                                       |
 | ----------- | ------------------------------------------------------------------------------------------ |
 | 0-0018      | [aic310x](https://www.ti.com/product/TLV320AIC3100)                                        |
@@ -99,13 +100,45 @@ Also performs watchdog function, and will reset the main processor if communicat
 
 ### Power/Communication
 Sumitomo 6098-5611 (Unverified)
+
 ![CMU Connector](doc/assets/images/MZ3USAC0920_201B.svg)
+
+| Pin | Use            |
+| --- | -------------- |
+| 2A  |                |
+| 2B  |                |
+| 2C  | Ground         |
+| 2D  | Ground         |
+| 2E  | HS CAN H       |
+| 2F  | HS CAN L       |
+| 2G  |                |
+| 2I  | Local CAN      |
+| 2J  | Local CAN      |
+| 2K  | LIN            |
+| 2L  | GND            |
+| 2M  |                |
+| 2O  | RS485 to TAU + |
+| 2P  | RS485 to TAU - |
+| 2Q  | 12V Accessory  |
+| 2R  | 12V Constant   |
+| 2S  | UART TX        |
+| 2T  | UART RX        |
+
+
 
 ### USB
 ![USB Connector](doc/assets/images/MZ3USAC0920_201D.svg)
 
+| Pin | Use   |
+| --- | ----- |
+| 4A  | GND   |
+| 4B  | Data+ |
+| 4C  | 5V    |
+| 4D  | Data- |
+
 
 Hirose GT17 series connector. One with B keying, one with C keying
+
 | P/N              | Description    |
 | ---------------- | -------------- |
 | GT8-2428SCF(70)  | Crimp pin      |
@@ -118,7 +151,15 @@ Hirose GT17 series connector. One with B keying, one with C keying
 
 ![Display Connector](doc/assets/images/MZ3USAC0920_201C.svg)
 
+| Pin | Use |
+| --- | --- |
+| 3A  |     |
+| 3B  |     |
+| 3C  |     |
+| 3D  |     |
+
 Hirose GT17 series connector. A keying
+
 | P/N              | Description    |
 | ---------------- | -------------- |
 | GT8-2428SCF(70)  | Crimp pin      |
@@ -130,6 +171,38 @@ Hirose GT17 series connector. A keying
 ### Audio Connector
 
 ![Audio Connector](doc/assets/images/MZ3USAC0920_201A.svg)
+
+| Pin | Use                       |
+| --- | ------------------------- |
+| 1A  | Rear Camera (Shield Wire) |
+| 1B  | Rear Camera               |
+| 1C  | Rear Camera               |
+| 1D  | Rear Camera (Shield)      |
+| 1E  |                           |
+| 1F  |                           |
+| 1G  |                           |
+| 1H  |                           |
+| 1I  |                           |
+| 1J  |                           |
+| 1K  |                           |
+| 1L  |                           |
+| 1M  | Steering Wheel Control    |
+| 1N  | Steering Wheel Control    |
+| 1O  | Steering Wheel Control    |
+| 1P  | Microphone                |
+| 1Q  | Microphone                |
+| 1R  | Microphone                |
+| 1S  | Microphone                |
+| 1T  | Microphone                |
+| 1U  |                           |
+| 1V  | Microphone (Shield)       |
+| 1W  |                           |
+| 1X  | Audio Out (Shield)        |
+| 1Y  | Audio Out                 |
+| 1Z  | Audio Out                 |
+| 1AA | Audio Out                 |
+| 1AB | Audio Out                 |
+
 
 | P/N          | Description  |
 | ------------ | ------------ |
