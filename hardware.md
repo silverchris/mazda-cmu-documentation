@@ -219,6 +219,10 @@ Hirose GT17 series connector. A keying
 ### GPS Connector
 Unknown
 
+### GPS
+Device: ttymxc2
+ST STA8088F
+
 ## Wireless
 wl1285q-bt possibly made by Texas Instruments, uses wl12xx driver
 
