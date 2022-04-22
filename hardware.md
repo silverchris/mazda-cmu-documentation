@@ -2,7 +2,7 @@
 
 
 ## Main Processor
-[NXP/Freescale i.mx6](pdf/IMX6DQRM.pdf)
+[NXP/Freescale i.mx6](doc/assets/IMX6DQRM.pdf)
 
 Usually an I.MX6D dual core processor.
 Some reports of I.MX6Q quad core processors have been found, but not verified.
@@ -88,7 +88,7 @@ Uses proprietary FlashFx(ffxblk) driver from [DataLight](https://en.wikipedia.or
 
 ## VIP
 
-[Renaesas R5F35MCEJFB](pdf/R5F35MCEJFB.pdf)
+[Renaesas R5F35MCEJFB](doc/assets/R5F35MCEJFB.pdf)
 
 Implements the communication between the main processor and the CAN/LIN busses.
 
