@@ -221,6 +221,7 @@ Unknown
 
 ### GPS
 Device: ttymxc2
+
 ST STA8088F
 
 ## Wireless
