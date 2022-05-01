@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+.wrapper {
+  width:auto;
+  margin:0 auto;
+}
+section {
+  width:calc(100% - 270px);
+  float:right;
+  padding-bottom:50px;
+}
