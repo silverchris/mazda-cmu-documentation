@@ -15,3 +15,7 @@ Not all information may be correct. It is provided with no warranty or guarantee
 [Failsafe Boot](failsafe-boot.md)
 
 [DBus Interfaces](dbus/index.md)
+
+[Application Versions](versions.md)
+
+[CanBus Messages](can_messages.md)
