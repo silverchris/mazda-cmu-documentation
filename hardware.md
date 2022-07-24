@@ -62,6 +62,8 @@ Device: mmcblk0
 
 4GB
 
+Micron N2M400FDA311A3B
+
 | Mount Point       | Use | Device         | Filesystem |
 | ----------------- | --- | -------------- | ---------- |
 | /mnt/data_persist |     | /dev/mmcblk0p2 | relfs      |
@@ -99,13 +101,23 @@ Also performs watchdog function, and will reset the main processor if communicat
 
 MAX9265 provides the display data link between the display and the CMU. It also handles the touch data.
 
+## LIN Transceiver 
+[ON Semiconductor NCV7321](doc/assets/NCV7321-D.PDF)
+
+## CANBUS Transceivers
+[NXP TJA1043](doc/assets/TJA1043.pdf)
+[NXP TJA1042](doc/assets/TJA1042.pdf)
+
+## Audio Codec
+[Texas Instruments TLV320AIC3104](doc/assets/tlv320aic3104.pdf)
+
 ## I2C devices
 
-| Bus-Address | Name                                                |
-| ----------- | --------------------------------------------------- |
-| 0-0018      | [aic310x](https://www.ti.com/product/TLV320AIC3100) |
-| 1-0020      | [adv7180](#video-decoder)                           |
-| 2-0010      | auth-ic                                             |
+| Bus-Address | Name                      |
+| ----------- | ------------------------- |
+| 0-0018      | [aic310x](#audio-codec)   |
+| 1-0020      | [adv7180](#video-decoder) |
+| 2-0010      | auth-ic                   |
 
 ## Connectors
 
