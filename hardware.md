@@ -94,6 +94,10 @@ Implements the communication between the main processor and the CAN/LIN busses.
 
 Also performs watchdog function, and will reset the main processor if communication is disrupted. (handled by vim_app)
 
+## Video Serializer
+[Maxim Integrated MAX9265](doc/assets/MAX9265.pdf)
+
+MAX9265 provides the display data link between the display and the CMU. It also handles the touch data.
 
 ## I2C devices
 
