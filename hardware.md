@@ -158,12 +158,12 @@ Hirose GT17 series connector. One with B keying, one with C keying
 
 ![Display Connector](doc/assets/images/MZ3USAC0920_201C.svg)
 
-| Pin | Use |
-| --- | --- |
-| 3A  |     |
-| 3B  |     |
-| 3C  |     |
-| 3D  |     |
+| Pin | Use    |
+| --- | ------ |
+| 3A  |        |
+| 3B  | LVDS + |
+| 3C  |        |
+| 3D  | LVDS - |
 
 Hirose GT17 series connector. A keying
 
@@ -179,36 +179,36 @@ Hirose GT17 series connector. A keying
 
 ![Audio Connector](doc/assets/images/MZ3USAC0920_201A.svg)
 
-| Pin | Use                           |
-| --- | ----------------------------- |
-| 1A  | Rear Camera (Shield Wire)     |
-| 1B  | Rear Camera                   |
-| 1C  | Rear Camera                   |
-| 1D  | Rear Camera (Shield)          |
-| 1E  |                               |
-| 1F  |                               |
-| 1G  | iPod Video (Not implemented?) |
-| 1H  | iPod Video (Not implemented?) |
-| 1I  |                               |
-| 1J  |                               |
-| 1K  |                               |
-| 1L  |                               |
-| 1M  | Steering Wheel Control        |
-| 1N  | Steering Wheel Control        |
-| 1O  | Steering Wheel Control        |
-| 1P  | Microphone                    |
-| 1Q  | Microphone                    |
-| 1R  | Microphone                    |
-| 1S  | Microphone                    |
-| 1T  | Microphone                    |
-| 1U  |                               |
-| 1V  | Microphone (Shield)           |
-| 1W  |                               |
-| 1X  | Audio Out (Shield)            |
-| 1Y  | Audio Out                     |
-| 1Z  | Audio Out                     |
-| 1AA | Audio Out                     |
-| 1AB | Audio Out                     |
+| Pin | Use                               |
+| --- | --------------------------------- |
+| 1A  | Rear Camera (Video Signal)        |
+| 1B  | Rear Camera (Video Ground)        |
+| 1C  | Rear Camera (Power +6V)           |
+| 1D  | Rear Camera (Shield/Power Ground) |
+| 1E  |                                   |
+| 1F  |                                   |
+| 1G  | DVD (Signal)                      |
+| 1H  | DVD (Ground)                      |
+| 1I  |                                   |
+| 1J  |                                   |
+| 1K  | iPod Video (Signal)               |
+| 1L  | iPod Video (Ground)               |
+| 1M  | Steering Wheel Control            |
+| 1N  | Steering Wheel Control            |
+| 1O  | Steering Wheel Control            |
+| 1P  | Microphone  (Detect)              |
+| 1Q  | Microphone  (Power)               |
+| 1R  | Microphone  (Ground)              |
+| 1S  | Microphone  (Signal +)            |
+| 1T  | Microphone  (Signal -)            |
+| 1U  |                                   |
+| 1V  | Microphone (Shield)               |
+| 1W  |                                   |
+| 1X  | Audio Out (Shield)                |
+| 1Y  | Audio Out (LH +)                  |
+| 1Z  | Audio Out (LH -)                  |
+| 1AA | Audio Out (RH +)                  |
+| 1AB | Audio Out (RH -)                  |
 
 
 | P/N          | Description  |
