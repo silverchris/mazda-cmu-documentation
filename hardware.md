@@ -1,4 +1,27 @@
 # Hardware
+- [Hardware](#hardware)
+  - [Main Processor](#main-processor)
+  - [Memory](#memory)
+  - [Storage](#storage)
+    - [SPI-NOR](#spi-nor)
+    - [eMMC](#emmc)
+    - [NAND](#nand)
+  - [VIP](#vip)
+  - [Video Serializer](#video-serializer)
+  - [LIN Transceiver](#lin-transceiver)
+  - [CANBUS Transceivers](#canbus-transceivers)
+  - [Audio Codec](#audio-codec)
+  - [I2C devices](#i2c-devices)
+  - [Connectors](#connectors)
+    - [Power/Communication](#powercommunication)
+    - [USB](#usb)
+    - [Display](#display)
+    - [Audio Connector](#audio-connector)
+    - [GPS Connector](#gps-connector)
+    - [GPS](#gps)
+  - [Wireless](#wireless)
+  - [Video Decoder](#video-decoder)
+
 
 
 ## Main Processor
