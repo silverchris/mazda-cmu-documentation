@@ -1,13 +1,3 @@
-Found in libjcivim_api.so:VIMDEBUG_Init
-/sys/class/gpio/%s/value","DO_TP1056"
-
-DO_TP1056
-DO_TP1053
-DO_TP1054
-DO_TP1057
-DO_TP1027
-DO_TP1029
-
 
 /tmp/root # cat /sys/kernel/debug/gpio
 GPIOs 0-31, gpio-0:
