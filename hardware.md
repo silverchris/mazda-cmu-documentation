@@ -27,7 +27,7 @@
 ## Main Processor
 [NXP/Freescale i.mx6](doc/assets/IMX6DQRM.pdf)
 
-Usually an I.MX6D dual core processor.
+Usually an I.MX6D dual core processor. (Note: Not the I.MX6DL/I.MX6 Dual Lite)
 Some reports of I.MX6Q quad core processors have been found, but not verified.
 
 ```

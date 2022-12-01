@@ -19,3 +19,5 @@ Not all information may be correct. It is provided with no warranty or guarantee
 [Application Versions](versions.md)
 
 [CanBus Messages](can_messages.md)
+
+[VIP (Vehicle Information Processor)](vip.md)
