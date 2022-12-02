@@ -21,6 +21,7 @@
     - [GPS](#gps)
   - [Wireless](#wireless)
   - [Video Decoder](#video-decoder)
+  - [ENET JTAG Connector](#enet-jtag-connector)
 
 
 
@@ -68,7 +69,7 @@ Macronix MX25L6445 - 16SOP package. 64MBIT/8Megabyte
 Contains:
 
 | Mount Point | Partition Name                | Device    | Flash Offset | Filesystem |
-| ----------- | ----------------------------- | --------- | ------------ | ---------- |
+|-------------|-------------------------------|-----------|--------------|------------|
 |             | bootstrap                     | /dev/mtd0 | 0x000000     | N/A        |
 |             | boot-select                   | /dev/mtd1 | 0x010000     | N/A        |
 |             | ibc1                          | /dev/mtd2 | 0x020000     | N/A        |
@@ -88,7 +89,7 @@ Device: mmcblk0
 Micron N2M400FDA311A3B
 
 | Mount Point       | Use | Device         | Filesystem |
-| ----------------- | --- | -------------- | ---------- |
+|-------------------|-----|----------------|------------|
 | /mnt/data_persist |     | /dev/mmcblk0p2 | relfs      |
 | /mnt/resources    |     | /dev/mmcblk0p1 | relfs      |
 
@@ -104,7 +105,7 @@ Main kernel and rootfs live here.
 Uses proprietary FlashFx(ffxblk) driver from [DataLight](https://en.wikipedia.org/wiki/Datalight)
 
 | Mount Point | Use    | Device       | Filesystem |
-| ----------- | ------ | ------------ | ---------- |
+|-------------|--------|--------------|------------|
 |             | kernel | /dev/ffx00   |            |
 | /           | rootfs | /dev/ffx01p1 | relfs      |
 |             |        | /dev/ffx01p2 | relfs      |
@@ -137,7 +138,7 @@ MAX9265 provides the display data link between the display and the CMU. It also 
 ## I2C devices
 
 | Bus-Address | Name                      |
-| ----------- | ------------------------- |
+|-------------|---------------------------|
 | 0-0018      | [aic310x](#audio-codec)   |
 | 1-0020      | [adv7180](#video-decoder) |
 | 2-0010      | auth-ic                   |
@@ -150,7 +151,7 @@ Sumitomo 6098-5611 (Unverified)
 ![CMU Connector](doc/assets/images/MZ3USAC0920_201B.svg)
 
 | Pin | Use            |
-| --- | -------------- |
+|-----|----------------|
 | 2A  |                |
 | 2B  |                |
 | 2C  | Ground         |
@@ -176,7 +177,7 @@ Sumitomo 6098-5611 (Unverified)
 ![USB Connector](doc/assets/images/MZ3USAC0920_201D.svg)
 
 | Pin | Use   |
-| --- | ----- |
+|-----|-------|
 | 4A  | GND   |
 | 4B  | Data+ |
 | 4C  | 5V    |
@@ -186,7 +187,7 @@ Sumitomo 6098-5611 (Unverified)
 Hirose GT17 series connector. One with B keying, one with C keying
 
 | P/N              | Description    |
-| ---------------- | -------------- |
+|------------------|----------------|
 | GT8-2428SCF(70)  | Crimp pin      |
 | GT17HN-4DS-2C(C) | C keyed insert |
 | GT17HN-4DS-2C(B) | B keyed insert |
@@ -198,7 +199,7 @@ Hirose GT17 series connector. One with B keying, one with C keying
 ![Display Connector](doc/assets/images/MZ3USAC0920_201C.svg)
 
 | Pin | Use    |
-| --- | ------ |
+|-----|--------|
 | 3A  |        |
 | 3B  | LVDS + |
 | 3C  |        |
@@ -207,7 +208,7 @@ Hirose GT17 series connector. One with B keying, one with C keying
 Hirose GT17 series connector. A keying
 
 | P/N              | Description    |
-| ---------------- | -------------- |
+|------------------|----------------|
 | GT8-2428SCF(70)  | Crimp pin      |
 | GT17HN-4DS-2C(A) | A keyed insert |
 | GT17HNS-4DS-HU   | Housing        |
@@ -219,7 +220,7 @@ Hirose GT17 series connector. A keying
 ![Audio Connector](doc/assets/images/MZ3USAC0920_201A.svg)
 
 | Pin | Use                               |
-| --- | --------------------------------- |
+|-----|-----------------------------------|
 | 1A  | Rear Camera (Video Signal)        |
 | 1B  | Rear Camera (Video Ground)        |
 | 1C  | Rear Camera (Power +6V)           |
@@ -251,7 +252,7 @@ Hirose GT17 series connector. A keying
 
 
 | P/N          | Description  |
-| ------------ | ------------ |
+|--------------|--------------|
 | A104954CT-ND | Crimp socket |
 | 1717115-1    | Housing      |
 
@@ -268,3 +269,39 @@ wl1285q-bt possibly made by Texas Instruments, uses wl12xx driver
 
 ## Video Decoder
 Analog Devices [adv7180](https://www.analog.com/media/en/technical-documentation/data-sheets/adv7180.pdf)
+
+
+## ENET JTAG Connector
+
+| Pin | Signal                  |
+|-----|-------------------------|
+| 1   |                         |
+| 2   |                         |
+| 3   | GPIO1_31/ENET_MDC       |
+| 4   |                         |
+| 5   | GPIO1_29/ENET_TXD1      |
+| 6   | GPIO1_30/ENET_TXD0      |
+| 7   | GPIO1_28/ENET_TX_EN     |
+| 8   | GPIO1_22/ENET_MDIO      |
+| 9   | GND                     |
+| 10  |                         |
+| 11  |                         |
+| 12  |                         |
+| 13  |                         |
+| 14  |                         |
+| 15  |                         |
+| 16  |                         |
+| 17  |                         |
+| 18  | +3V3                    |
+| 19  | GPIO1_23/ENET_TX_CLK    |
+| 20  | GPIO1_26/ENET_RXD1      |
+| 21  | GPIO1_27/ENET_RXD0      |
+| 22  | GPIO1_24/ENET_RX_ER     |
+| 23  | GPIO1_25/ENET_RX_EN     |
+| 24  | GND                     |
+| 25  |                         |
+| 26  |                         |
+| 27  |                         |
+| 28  |                         |
+| 29  | CPU Reset (JTAG_TRSTB?) |
+| 30  | +3V3                    |

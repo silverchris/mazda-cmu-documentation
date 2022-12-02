@@ -1,4 +1,5 @@
 - [i2c](#i2c)
+- [SPI](#spi)
 - [UART](#uart)
 - [GPIO](#gpio)
 
@@ -9,6 +10,15 @@
 | 0x21A0000           | 0x44 | 0           | 104kbit/s |
 | 0x21A4000           | 0x45 | 1           | 104kbit/s |
 | 0x21A8000           | 0x46 | 2           | 50kbit/s  |
+
+## SPI
+
+| SPI Master | Device        | Speed |
+|------------|---------------|-------|
+| 1          | SPI-NOR Flash | 20MHz |
+| 2          | VIP           | 4MHz  |
+| 4          | ?             | 1MHz  |
+
 
 ## UART
 | i.mx6 uart | linux Uart   | Use           |
