@@ -272,6 +272,7 @@ Analog Devices [adv7180](https://www.analog.com/media/en/technical-documentation
 
 
 ## ENET JTAG Connector
+Sullins RBE15DHHN or similar
 
 | Pin | Signal                  |
 |-----|-------------------------|

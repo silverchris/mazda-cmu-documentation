@@ -5,11 +5,11 @@
 
 ## i2c
 
-| i.mx6 register base | irq  | i2c adapter | bus speed |
-|---------------------|------|-------------|-----------|
-| 0x21A0000           | 0x44 | 0           | 104kbit/s |
-| 0x21A4000           | 0x45 | 1           | 104kbit/s |
-| 0x21A8000           | 0x46 | 2           | 50kbit/s  |
+| i.mx6 register base | irq  | i2c adapter | bus speed | device                          |
+|---------------------|------|-------------|-----------|---------------------------------|
+| 0x21A0000           | 0x44 | 0           | 104kbit/s | Audio Codec (aic310x)           |
+| 0x21A4000           | 0x45 | 1           | 104kbit/s | Video Decoder/Capture (adv7180) |
+| 0x21A8000           | 0x46 | 2           | 50kbit/s  | Apple "auth-ic"                 |
 
 ## SPI
 
@@ -34,7 +34,7 @@
 
 | i.mx6      | Linux GPIO         | Use                   | Name             | sysfs_name      | active low | initial value | direction | direction may change | Notes                                                                      |
 |------------|--------------------|-----------------------|------------------|-----------------|------------|---------------|-----------|----------------------|----------------------------------------------------------------------------|
-| GPIO1_IO16 | 0x10               |                       | i2css_reset      |                 |            |               |           |                      |                                                                            |
+| GPIO1_IO16 | 0x10               |                       | i2css_reset      |                 |            |               |           |                      | Apple auth-ic                                                              |
 | GPIO1_IO19 | 0x13               |                       | TV Detec         | DI_TV_DET       | 0          | 0             | 1         | 1                    |                                                                            |
 | GPIO1_IO21 | 0x15               |                       | Camera Select    | DI_CAMERA_SEL   | 0          | 0             | 1         | 1                    |                                                                            |
 | GPIO2_IO08 | 0x28               |                       | TP1053           | DO_TP1053       | 0          | 0             | 0         | 1                    |                                                                            |
