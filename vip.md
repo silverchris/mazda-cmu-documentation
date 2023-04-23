@@ -11,8 +11,10 @@
   - [Kernel Modules](#kernel-modules)
     - [com.jci.cpp.drivers.GpioChip.ko](#comjcicppdriversgpiochipko)
     - [cmu\_io.ko](#cmu_ioko)
+  - [Misc](#misc)
     - [VIP CPU](#vip-cpu)
     - [CAN BUS IDs](#can-bus-ids)
+    - [Input Events](#input-events)
 
 # VIP
 
@@ -197,6 +199,7 @@ Looks to emulate a GpioChip. Doesn't actually interact with hardware, just react
 ### cmu_io.ko
 Provides VIP interrupt(GPIO2_IO10) to vim_app through /dev/cmu_io
 
+## Misc
 
 ### VIP CPU
 Running Renasas MR30 RTOS
@@ -368,3 +371,24 @@ The `PUBLIC` bus is used to communcate with the rest of the car
 | 151   | PUBLIC  | 0x728          |
 | 152   | PUBLIC  | 0x71E          |
 | 153   | PUBLIC  | 0x70E          |
+
+
+### Input Events
+| VIP Message ID | Button Name | Input Event Code (Hex) | Input Event Code | Use                            |
+|----------------|-------------|------------------------|------------------|--------------------------------|
+| 0x84           | WheelUp     | 0x06                   | REL_HWHEEL       | Horizontal Scroll/Rotary Input |
+| 0x85           | WheelDown   | 0x06                   | REL_HWHEEL       | Horizontal Scroll/Rotary Input |
+| 0x86           | Encoder2CW  | 0x32                   | KEY_M            | Volume                         |
+| 0x87           | Encoder2CCW | 0x31                   | KEY_N            | Volume                         |
+| 0x89           | Invalid     |                        |                  |                                |
+| 0x94           | SW1Button10 | 0x35                   | KEY_SLASH        | Mute                           |
+| 0xA7           | SW3Button3  | 0x12                   | KEY_E            |                                |
+| 0xA8           | SW3Button4  | 0x13                   | KEY_R            | Navi                           |
+| 0xA9           | SW3Button5  | 0x14                   | KEY_T            |                                |
+| 0xAA           | SW3Button6  | 0x67                   | KEY_UP           | Up                             |
+| 0xAB           | SW3Button7  | 0x1C                   | KEY_ENTER        | Enter                          |
+| 0xAC           | SW3Button8  | 0x6C                   | KEY_DOWN         | Down                           |
+| 0xAD           | SW3Button9  | 0x69                   | KEY_LEFT         | Left                           |
+| 0xAE           | SW3Button10 | 0x6A                   | KEY_RIGHT        | Right                          |
+| 0xB2           | SW4Button1  | 0x66                   | KEY_HOME         | Home                           |
+| 0xB3           | SW4Button2  | 0x0E                   | KEY_BACKSPACE    | Back                           |
