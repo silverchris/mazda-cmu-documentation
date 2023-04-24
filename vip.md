@@ -374,6 +374,7 @@ The `PUBLIC` bus is used to communcate with the rest of the car
 
 
 ### Input Events
+
 | VIP Message ID | Button Name | Input Event Code (Hex) | Input Event Code | Use                            |
 |----------------|-------------|------------------------|------------------|--------------------------------|
 | 0x84           | WheelUp     | 0x06                   | REL_HWHEEL       | Horizontal Scroll/Rotary Input |
