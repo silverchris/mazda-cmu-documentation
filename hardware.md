@@ -285,12 +285,12 @@ Sullins RBE15DHHN or similar
 | 7   | GPIO1_28/ENET_TX_EN     |
 | 8   | GPIO1_22/ENET_MDIO      |
 | 9   | GND                     |
-| 10  |                         |
-| 11  |                         |
-| 12  |                         |
-| 13  |                         |
-| 14  |                         |
-| 15  |                         |
+| 10  | JTAG_TDO                |
+| 11  | JTAG_TDI                |
+| 12  | JTAG_TCK                |
+| 13  | JTAG_TMS                |
+| 14  | JTAG_TRSTB              |
+| 15  | +3V3                    |
 | 16  |                         |
 | 17  |                         |
 | 18  | +3V3                    |
@@ -304,5 +304,5 @@ Sullins RBE15DHHN or similar
 | 26  |                         |
 | 27  |                         |
 | 28  |                         |
-| 29  | CPU Reset (JTAG_TRSTB?) |
+| 29  | CPU Reset (JTAG_SRST)   |
 | 30  | +3V3                    |
